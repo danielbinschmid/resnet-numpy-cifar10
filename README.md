@@ -4,7 +4,8 @@ Pure numpy implementation of a basic ResNet. Evaluation of implementation on Cif
 
 ## Setup
 
-1. Create a fresh python virtual environment with python version 3.10.14 and source environment.
+0. Clone this repository. Note: Dataset is managed with `git lfs` and pulled together with the code when cloning this repository.
+1. Create a fresh python virtual environment with python version 3.10.13 and source environment.
 2. Setup environment with _poetry_
 
 ```s
@@ -15,7 +16,7 @@ $ poetry install
 
 ## Dataset
 
-This repository uses `git lfs` (large file storage) for the cifar-10 dataset. 
+This repository uses `git lfs` (large file storage) for the cifar-10 dataset. If the dataset was not pulled upon cloning, follow following steps:
 
 1. Make sure `git lfs` is installed on your system. On manjaro, e.g., `git lfs` can be installed via
 
