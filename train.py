@@ -25,6 +25,7 @@ compose_transform_training = get_compose_transform(training=True)
 datasets = get_datasets(DATASET, cifar_root, compose_transform, compose_transform_training)
 dataloaders = get_dataloaders(datasets)
 
+print("unzipping data..")
 debugging_validation_dataset = DATASET(
     mode='val',
     root=cifar_root,
@@ -32,6 +33,7 @@ debugging_validation_dataset = DATASET(
     transform=compose_transform,
     limit_files=100
 )
+print("done.")
 
 def train_full():
     epochs = 10
